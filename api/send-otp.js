@@ -8,10 +8,11 @@ const projects = {
     username: process.env.INTERVYO_MAIL_USERNAME,
     password: process.env.INTERVYO_MAIL_PASSWORD,
     fromName: "Intervyo",
+    appName : "Intervyo",
     logoUrl: process.env.INTERVYO_LOGO_URL,
   },
 
-  [process.env.MAIL_SERVICE_SECRET]: {
+  [process.env.PROJECT2_SERVICE_TOKEN]: {
     username: process.env.PROJECT2_MAIL_USERNAME,
     password: process.env.PROJECT2_MAIL_PASSWORD,
     fromName: "Project 2",
