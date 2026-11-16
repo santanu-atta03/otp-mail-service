@@ -4,14 +4,14 @@ const crypto = require("crypto");
 
 // Each project has its own SMTP account and private token.
 const projects = {
-  [process.env.INTERVYO_SERVICE_TOKEN]: {
+  [process.env.MAIL_SERVICE_SECRET]: {
     username: process.env.INTERVYO_MAIL_USERNAME,
     password: process.env.INTERVYO_MAIL_PASSWORD,
     fromName: "Intervyo",
     logoUrl: process.env.INTERVYO_LOGO_URL,
   },
 
-  [process.env.PROJECT2_SERVICE_TOKEN]: {
+  [process.env.MAIL_SERVICE_SECRET]: {
     username: process.env.PROJECT2_MAIL_USERNAME,
     password: process.env.PROJECT2_MAIL_PASSWORD,
     fromName: "Project 2",
